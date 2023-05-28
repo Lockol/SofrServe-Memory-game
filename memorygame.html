@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="memorygamestyles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <span class="timer"> 
+          Your time will start when you click on game mode!
+          <span id="timer" class="times"></span>
+          <span id="game-over-message" class="hidden-text result">ВИ ПРОГРАЛИ</span>
+          <span id="winner-message" class="hidden-text result">ВИ ВИЙГРАЛИ</span>
+      </span>
+      </div>
+      <div class="button-div">
+        
+        <button id="easy-mode" class="easy-mode">Easy Mode</button>
+        <button class="hard-mode">Hard Mode</button>
+        
+      </div>
+      <section class="memory-game">
+        <div class="memory-card" data-value="china-symbol">
+          <img src="./assets/img/china-symbol.png" alt="china-symbol" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="china-symbol">
+          <img src="./assets/img/china-symbol.png" alt="china-symbol" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="medicine">
+          <img src="./assets/img/medicine.png" alt="medicine" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="medicine">
+          <img src="./assets/img/medicine.png" alt="medicine" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="money">
+          <img src="./assets/img/money.png" alt="money" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="money">
+          <img src="./assets/img/money.png" alt="money" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="rocket">
+          <img src="./assets/img/rocket.png" alt="rocket" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="rocket">
+          <img src="./assets/img/rocket.png" alt="rocket" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="star">
+          <img src="./assets/img/star.png" alt="star" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="star">
+          <img src="./assets/img/star.png" alt="star" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="warning">
+          <img src="./assets/img/warning.png" alt="warning" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card" data-value="warning">
+            <img src="./assets/img/warning.png" alt="warning" class="front-face" />
+            <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card hidden" data-value="auto-1">
+          <img src="./assets/img/auto-1.png" alt="auto-1" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card hidden" data-value="auto-1">
+          <img src="./assets/img/auto-1.png" alt="auto-1" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card hidden" data-value="cow-2">
+          <img src="./assets/img/cow-2.png" alt="cow-2" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <div class="memory-card hidden" data-value="cow-2">
+          <img src="./assets/img/cow-2.png" alt="cow-2" class="front-face" />
+          <img src="./assets/img/surprise.png" alt="surprise" class="back-face" />
+        </div>
+        <audio class="flip" src="./fit.mp3"></audio>
+        <audio class="woohoo" src="./Cartoon-woohoo.mp3"></audio>
+        <audio class="grustnyy-trombon" src="./grustnyy-trombon.mp3"></audio>
+        <audio class="winner" src="./winner.mp3"></audio>
+      </section>
+      <section class="Skins">  
+        <img src="./assets/img/surprise.png" alt="surprise-1" class="surprise"/> 
+        <img src="./assets/img/surprise - 2.png" alt="surprise-2" class="surprise"/>
+        <img src="./assets/img/surprise - 3.png" alt="surprise-3" class="surprise"/>
+        <img src="./assets/img/surprise - 4.png" alt="surprise-4" class="surprise"/>
+      </section>
+    </div>
+    <script src="memorygameligoc.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,162 @@
+
+
+                                                /* General styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    background-image: url('/assets/img/rTlqVG.png');
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+
+                                                /* Styles for board */
+.memory-game {
+    width: 450px;
+    height: 400px;
+    margin: 140px auto;
+    display: flex;
+    flex-flow: row wrap;
+    perspective: 1000px;
+}
+
+.memory-card{
+    width: calc(25% - 10px);
+    height: calc(33.333%);
+    margin: 5px;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 20px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,253,95,1) 100%);
+    backface-visibility: hidden;
+}
+
+
+
+.front-face.shake {
+    animation: shake 0.3s ease-in-out;
+    backface-visibility: visible;
+  }
+.front-face {
+    transform: rotateY(180deg);
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-13px);
+    }
+    40% {
+        transform: translateX(13px);
+    }
+    60% {
+        transform: translateX(-8px);
+    }
+    80% {
+        transform: translateX(8px);
+    }
+    
+}
+
+
+
+.playing {
+    border-radius: 20px;
+    border-color:#ffc600;
+    box-shadow: 0 0 5px 10px green;
+}
+
+.hidden {
+    display: none;
+}
+
+.memory-card.largest {
+    height: calc(25%);  
+} 
+
+                                                /* Styles for button*/
+
+.button-div{
+    width: auto;
+    height: 350px;
+} 
+
+.easy-mode,
+.hard-mode{
+    width: 350px;
+    height: 90px;
+    margin: 20px;
+    display: flex;
+    top: 45%;
+    left: 30%;
+    padding: auto;
+    border-radius: 20px;
+    position: relative;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+                                                    /* Styles for timer */
+.timer,
+.result {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    left: 25%;
+    top: 3%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hidden-text{
+    display: none;
+}
+
+.result{
+    top: 80%
+}
+
+
+                                                /* Styles for Skins */
+
+.Skins {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.surprise {
+    width: 100px;
+    height: 100px;
+   
+}
+
